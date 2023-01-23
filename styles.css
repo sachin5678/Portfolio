@@ -204,3 +204,9 @@ hr {
     text-align: center;
   }
 }
+#chess {
+  text-decoration: none;
+  color: blue;
+  /* background-color: rgb(220, 170, 196); */
+  /* border: 2px solid rgb(206, 52, 116); */
+}
