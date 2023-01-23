@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #d0568a;
+  --primary-color: #ec4899;
+  --secondary-color: #f472b6;
+  --third-color: #ec4899;
   --dark-gray: #6b7280;
   --off-white: #f1f5f9;
   --dark-hover: #111827;
@@ -34,14 +36,15 @@ hr {
 }
 
 .link-primary {
-  background-color: var(--primary-color);
+  background-color: var(--third-color);
+  /* background-color: #fbcfe8; */
   border-radius: 0.5rem;
   color: white;
 }
 
 .link-secondary {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 0.5rem;
 }
 
