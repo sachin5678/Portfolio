@@ -37,8 +37,14 @@ hr {
 
 .link-primary {
   background-color: var(--third-color);
-  /* background-color: #fbcfe8; */
   border-radius: 0.5rem;
+  color: white;
+  transition: background 0.3s, color 0.3s, opacity 0.3s;
+}
+
+.link-primary:hover {
+  opacity: 0.7;
+  background-color: var(--third-color);
   color: white;
 }
 
@@ -46,6 +52,19 @@ hr {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 0.5rem;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.link-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.link-secondary:active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
 }
 
 /* lists */
@@ -64,11 +83,21 @@ hr {
   color: white;
   padding: 1rem;
   border-bottom-left-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navigation .nav-brand {
   font-weight: bold;
   font-size: 1.1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .navigation .link {
@@ -78,6 +107,7 @@ hr {
 .navigation .nav-pills {
   text-align: right;
   padding-inline-start: 0px;
+  margin-left: auto;
 }
 
 .navigation .link-active {
